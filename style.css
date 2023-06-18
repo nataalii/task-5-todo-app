@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header > h2{
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(233, 228, 228);
+}
+
+ul {
+  padding: 0px 30px;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  margin-top: 10px;
+  list-style-type: none;
+  font-size: 18px;
+  transition: 0.2s;
+  border-bottom: 1px solid rgb(233, 228, 228);
+  
+}
+
+ul li .numeric {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+}
+
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 7px 16px 7px 16px;
+  border-radius: 5px;
+  background-color: #db2947;
+  color: white;
+}
+
+
+.header {
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.no-todo{
+  background-color: #fcc3cc;
+  text-align: center;
+  color: #880808;
+  font-size: 20px;
+  padding: 30px 0;
+  margin: 0 30px;
+  border-radius: 10px;
+}
+.addBtn-wrapper{
+  margin: 0 30px;
+  display: flex;
+}
+
+#myInput {
+  border: 1px solid rgb(233, 228, 228) ;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+#myInput:focus{
+    outline: 1px solid rgb(233, 228, 228);
+    box-shadow: -1px 1px 15px 1px rgba(199,199,199,0.52);
+    -webkit-box-shadow: -1px 1px 15px 1px rgba(199,199,199,0.52);
+    -moz-box-shadow: -1px 1px 15px 1px rgba(199,199,199,0.52);
+}
+
+input[type='checkbox']{
+  margin-right: 20px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 20%;
+  background: rgb(8, 139, 8);
+  color: white;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
